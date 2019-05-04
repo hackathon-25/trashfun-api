@@ -3,16 +3,12 @@ require: rubocop-rspec
 AllCops:
   Exclude:
     - 'vendor/**/*'
-    - 'spec/fixtures/**/*'
     - 'tmp/**/*'
     - 'db/**/*'
     - 'Gemfile.lock'
-    - 'Guardfile'
-    - 'node_modules/**/*'
     - 'bin/*'
     - 'config/**/*'
     - 'spec/rails_helper.rb'
-    - 'gems/**/*'
   TargetRubyVersion: 2.5
 
 Rails:
@@ -66,20 +62,11 @@ Style/CollectionMethods:
 Style/DoubleNegation:
   Enabled: false
 
-RSpec/InstanceVariable:
-  Exclude:
-    - 'spec/views/*/edit.*.rb'
-
 RSpec/MessageSpies:
   EnforcedStyle: receive
 
 RSpec/MultipleExpectations:
   Enabled: false
-
-RSpec/RepeatedExample:
-  Exclude:
-    - 'spec/policies/**/*.rb'
-
 
 RSpec/DescribeClass:
   Enabled: false
@@ -94,6 +81,7 @@ RSpec/SubjectStub:
 # is silly. Let's try to live without them for now.
 Style/ParenthesesAroundCondition:
   AllowSafeAssignment: false
+
 Lint/AssignmentInCondition:
   AllowSafeAssignment: false
 
@@ -176,6 +164,7 @@ Style/MethodCalledOnDoEndBlock:
 # Style preference
 Style/MethodDefParentheses:
   Enabled: false
+
 Metrics/BlockLength:
   Exclude:
     - 'Rakefile'
