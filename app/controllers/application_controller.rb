@@ -9,7 +9,7 @@ class ApplicationController < ActionController::API
   private
 
   def configure_permitted_parameters
-    devise_parameter_sanitizer.for(:sign_up) << :username
+    devise_parameter_sanitizer.for(:sign_up) << :number_of_people
   end
 
   def authenticate_user
@@ -24,7 +24,7 @@ class ApplicationController < ActionController::API
     end
   end
 
-  def authenticate_user!(_options={})
+  def authenticate_user!
     head :unauthorized unless signed_in?
   end
 
