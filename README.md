@@ -34,10 +34,10 @@ Overall responsibilities
 
 ```ruby
 {
-	"user": {
-		"email": "polina@gmail.com",
-		"password": "12345678"
-	}
+   "user": {
+      "email": "polina@gmail.com",
+      "password": "1234567"
+   }
 }
 ```
 
@@ -45,10 +45,10 @@ Overall responsibilities
 
 ```ruby
 {
-	"user": {
-		"email": "polina@gmail.com",
-		"password": "1234567"
-	}
+   "user": {
+      "email": "polina@gmail.com",
+      "password": "1234567"
+   }
 }
 ```
 
