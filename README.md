@@ -63,7 +63,7 @@ Overall responsibilities
 }
 ```
 
-##### GET https://trashfun.herokuapp.com/api/challenges/:id/enrolled - See the challenge a user signed up
+##### GET https://trashfun.herokuapp.com/api/challenges/:id/enrolled - See the challenges a user signed up
 
 ```ruby
 {
@@ -71,4 +71,4 @@ Overall responsibilities
 }
 ```
 
-##### GET https://trashfun.herokuapp.com/api/challenges
+##### GET https://trashfun.herokuapp.com/api/challenges - Retrieve the list of challenges
