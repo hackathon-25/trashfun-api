@@ -23,6 +23,9 @@ Metrics/LineLength:
   IgnoredPatterns: ['\A#']
   Max: 120
 
+RSpec/ContextWording:
+  Enabled: false
+
 # No space makes the method definition shorter and differentiates
 # from a regular assignment.
 Layout/SpaceAroundEqualsInParameterDefault:
