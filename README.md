@@ -30,7 +30,7 @@ Overall responsibilities
 
 #### Authentication
 
-##### POST https://trashfun.herokuapp.com/api/users/login
+##### POST https://trashfun.herokuapp.com/api/users/login - Sign in
 
 ```ruby
 {
@@ -41,7 +41,7 @@ Overall responsibilities
 }
 ```
 
-##### POST https://trashfun.herokuapp.com/api/users
+##### POST https://trashfun.herokuapp.com/api/users - Sign up/Create a new user
 
 ```ruby
 {
@@ -54,16 +54,16 @@ Overall responsibilities
 
 #### Challenges
 
-##### POST https://trashfun.herokuapp.com/api/challenges/enroll
+##### POST https://trashfun.herokuapp.com/api/challenges/enroll - Sign Up for a challenge
 
 ```ruby
 {
-  user_id:      FactoryBot.create(:user).id,
-  challenge_id: FactoryBot.create(:challenge).id
+  user_id:      1,
+  challenge_id: 2
 }
 ```
 
-##### GET https://trashfun.herokuapp.com/api/challenges/:id/enrolled
+##### GET https://trashfun.herokuapp.com/api/challenges/:id/enrolled - See the challenge a user signed up
 
 ```ruby
 {
