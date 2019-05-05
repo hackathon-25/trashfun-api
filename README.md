@@ -26,6 +26,23 @@ Getting Started
 Overall responsibilities
 -------------------------
 
-### Feature Parity Milestone
+### Available endpoints
 
-TBD
+##### POST /api/challenges/enroll
+
+```ruby
+{
+  user_id:      FactoryBot.create(:user).id,
+  challenge_id: FactoryBot.create(:challenge).id
+}
+```
+
+##### GET /api/challenges/:id/enrolled
+
+```ruby
+{
+  id: user.id
+}
+```
+
+##### GET /api/challenges
