@@ -6,7 +6,7 @@ RSpec.describe Api::ChallengesController, type: :controller do
   describe "#enroll" do
     let(:params) do
       {
-        user_id: FactoryBot.create(:user).id,
+        user_id:      FactoryBot.create(:user).id,
         challenge_id: FactoryBot.create(:challenge).id
       }
     end
