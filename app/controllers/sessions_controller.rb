@@ -2,9 +2,9 @@
 
 class SessionsController < Devise::SessionsController
   def create
-    user = User.find_by(email: sign_in_params[:email])
+    user = User.find_by(email: params[:user][:email])
 
-    if user&.valid_password?(sign_in_params[:password])
+    if user&.valid_password?(params[:user][:password])
       @current_user = user
 
       render json: {message: "authentication was successful"}
