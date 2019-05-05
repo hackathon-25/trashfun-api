@@ -10,13 +10,34 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_05_05_005941) do
+ActiveRecord::Schema.define(version: 2019_05_05_172059) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "challenges", force: :cascade do |t|
     t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "item_groups", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "items", force: :cascade do |t|
+    t.integer "user_challenge_id"
+    t.integer "item_group_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "user_challenge_weights", force: :cascade do |t|
+    t.integer "user_challenge_id"
+    t.integer "item_group_id"
+    t.string "weight"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
