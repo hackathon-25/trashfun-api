@@ -28,7 +28,33 @@ Overall responsibilities
 
 ### Available endpoints
 
-##### POST /api/challenges/enroll
+#### Authentication
+
+##### POST https://trashfun.herokuapp.com/api/users/login
+
+```ruby
+{
+	"user": {
+		"email": "polina@gmail.com",
+		"password": "12345678"
+	}
+}
+```
+
+##### POST https://trashfun.herokuapp.com/api/users
+
+```ruby
+{
+	"user": {
+		"email": "polina@gmail.com",
+		"password": "1234567"
+	}
+}
+```
+
+#### Challenges
+
+##### POST https://trashfun.herokuapp.com/api/challenges/enroll
 
 ```ruby
 {
@@ -37,7 +63,7 @@ Overall responsibilities
 }
 ```
 
-##### GET /api/challenges/:id/enrolled
+##### GET https://trashfun.herokuapp.com/api/challenges/:id/enrolled
 
 ```ruby
 {
@@ -45,4 +71,4 @@ Overall responsibilities
 }
 ```
 
-##### GET /api/challenges
+##### GET https://trashfun.herokuapp.com/api/challenges
